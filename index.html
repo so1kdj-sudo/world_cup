@@ -94,70 +94,10 @@
 
             <!-- Match Schedule Content -->
             <div id="tab-matches" class="hidden space-y-4">
-                <div class="bg-gray-800/50 p-4 rounded-lg flex flex-col md:flex-row md:items-center justify-between border-l-4 border-red-500">
-                    <div class="mb-2 md:mb-0">
-                        <span class="text-xs font-bold bg-red-500 px-2 py-0.5 rounded text-white mr-2">OPENING MATCH</span>
-                        <span class="text-sm text-gray-400">6월 11일 (목) 18:00</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-6 my-4 md:my-0">
-                        <div class="text-right w-24 md:w-32"><span class="block text-lg font-bold">멕시코 <span class="text-sm font-bold text-wc-gold">FIFA Rank #14</span></span><span class="text-xs text-gray-500">MEXICO</span></div>
-                        <div class="text-2xl font-black text-wc-gold">VS</div>
-                        <div class="text-left w-24 md:w-32"><span class="block text-lg font-bold">남아공 <span class="text-sm font-bold text-wc-gold">FIFA Rank #58</span></span><span class="text-xs text-gray-500">SOUTH AFRICA</span></div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-300 block">에스타디오 아스테카</span>
-                        <span class="text-xs text-gray-500 italic">Mexico City</span>
-                    </div>
+                <div id="full-match-list" class="space-y-4">
+                    <!-- Matches will be injected here by JavaScript -->
                 </div>
-
-                <div class="bg-gray-800/50 p-4 rounded-lg flex flex-col md:flex-row md:items-center justify-between border-l-4 border-blue-500">
-                    <div class="mb-2 md:mb-0">
-                        <span class="text-xs font-bold bg-blue-500 px-2 py-0.5 rounded text-white mr-2">GROUP STAGE</span>
-                        <span class="text-sm text-gray-400">6월 13일 (토) 15:00</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-6 my-4 md:my-0">
-                        <div class="text-right w-24 md:w-32"><span class="block text-lg font-bold">브라질 <span class="text-sm font-bold text-wc-gold">FIFA Rank #6</span></span><span class="text-xs text-gray-500">BRAZIL</span></div>
-                        <div class="text-2xl font-black text-wc-gold">VS</div>
-                        <div class="text-left w-24 md:w-32"><span class="block text-lg font-bold">모로코 <span class="text-sm font-bold text-wc-gold">FIFA Rank #8</span></span><span class="text-xs text-gray-500">MOROCCO</span></div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-300 block">메트라이프 스타디움</span>
-                        <span class="text-xs text-gray-500 italic">East Rutherford, NJ</span>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800/50 p-4 rounded-lg flex flex-col md:flex-row md:items-center justify-between border-l-4 border-green-500">
-                    <div class="mb-2 md:mb-0">
-                        <span class="text-xs font-bold bg-green-500 px-2 py-0.5 rounded text-white mr-2">GROUP STAGE</span>
-                        <span class="text-sm text-gray-400">6월 14일 (일) 19:00</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-6 my-4 md:my-0">
-                        <div class="text-right w-24 md:w-32"><span class="block text-lg font-bold">네덜란드 <span class="text-sm font-bold text-wc-gold">FIFA Rank #7</span></span><span class="text-xs text-gray-500">NETHERLANDS</span></div>
-                        <div class="text-2xl font-black text-wc-gold">VS</div>
-                        <div class="text-left w-24 md:w-32"><span class="block text-lg font-bold">일본 <span class="text-sm font-bold text-wc-gold">FIFA Rank #18</span></span><span class="text-xs text-gray-500">JAPAN</span></div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-300 block">AT&T 스타디움</span>
-                        <span class="text-xs text-gray-500 italic">Arlington, TX</span>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800/50 p-4 rounded-lg flex flex-col md:flex-row md:items-center justify-between border-l-4 border-white">
-                    <div class="mb-2 md:mb-0">
-                        <span class="text-xs font-bold bg-white px-2 py-0.5 rounded text-black mr-2">GROUP STAGE</span>
-                        <span class="text-sm text-gray-400">6월 19일 (금) 20:00</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-6 my-4 md:my-0">
-                        <div class="text-right w-24 md:w-32"><span class="block text-lg font-bold">미국 <span class="text-sm font-bold text-wc-gold">FIFA Rank #16</span></span><span class="text-xs text-gray-500">USA</span></div>
-                        <div class="text-2xl font-black text-wc-gold">VS</div>
-                        <div class="text-left w-24 md:w-32"><span class="block text-lg font-bold">호주 <span class="text-sm font-bold text-wc-gold">FIFA Rank #24</span></span><span class="text-xs text-gray-500">AUSTRALIA</span></div>
-                    </div>
-                    <div class="text-right">
-                        <span class="text-sm text-gray-300 block">루멘 필드</span>
-                        <span class="text-xs text-gray-500 italic">Seattle, WA</span>
-                    </div>
-                </div>
-                <p class="text-center text-gray-500 text-sm mt-8">※ 대한민국 국가대표팀의 상세 일정은 '대한민국 일정' 탭에서 확인하실 수 있습니다.</p>
+                <p class="text-center text-gray-500 text-sm mt-8">※ 전체 104경기 중 주요 경기 및 대한민국 일정을 포함하고 있습니다. 상세 일정은 계속해서 업데이트됩니다.</p>
             </div>
 
             <!-- Team Korea Content -->
@@ -321,6 +261,62 @@
     </footer>
 
     <script>
+        // Match Data
+        const matches = [
+            { date: '2026-06-11 18:00', type: 'OPENING', team1: '멕시코', rank1: '14', team2: '남아공', rank2: '58', venue: '에스타디오 아스테카', city: 'Mexico City', color: 'red' },
+            { date: '2026-06-11 22:00', type: 'GROUP A', team1: '대한민국', rank1: '25', team2: '체코', rank2: '35', venue: '과달라하라 스타디움', city: 'Guadalajara', color: 'red' },
+            { date: '2026-06-12 15:00', type: 'GROUP B', team1: '캐나다', rank1: '40', team2: '나이지리아', rank2: '30', venue: 'BMO 필드', city: 'Toronto', color: 'blue' },
+            { date: '2026-06-12 19:00', type: 'GROUP B', team1: '미국', rank1: '16', team2: '스위스', rank2: '19', venue: 'SoFi 스타디움', city: 'Los Angeles', color: 'blue' },
+            { date: '2026-06-13 15:00', type: 'GROUP C', team1: '브라질', rank1: '6', team2: '모로코', rank2: '8', venue: '메트라이프 스타디움', city: 'East Rutherford', color: 'green' },
+            { date: '2026-06-14 19:00', type: 'GROUP D', team1: '네덜란드', rank1: '7', team2: '일본', rank2: '18', venue: 'AT&T 스타디움', city: 'Arlington', color: 'green' },
+            { date: '2026-06-15 14:00', type: 'GROUP E', team1: '프랑스', rank1: '2', team2: '가나', rank2: '64', venue: 'NRG 스타디움', city: 'Houston', color: 'yellow' },
+            { date: '2026-06-16 18:00', type: 'GROUP F', team1: '아르헨티나', rank1: '1', team2: '호주', rank2: '24', venue: '루멘 필드', city: 'Seattle', color: 'yellow' },
+            { date: '2026-06-17 15:00', type: 'GROUP G', team1: '잉글랜드', rank1: '4', team2: '에콰도르', rank2: '31', venue: '메르세데스-벤츠 스타디움', city: 'Atlanta', color: 'purple' },
+            { date: '2026-06-18 21:00', type: 'GROUP A', team1: '대한민국', rank1: '25', team2: '멕시코', rank2: '14', venue: '과달라하라 스타디움', city: 'Guadalajara', color: 'red' },
+            { date: '2026-06-19 20:00', type: 'GROUP B', team1: '미국', rank1: '16', team2: '캐나다', rank2: '40', venue: '루멘 필드', city: 'Seattle', color: 'white' },
+            { date: '2026-06-20 16:00', type: 'GROUP H', team1: '스페인', rank1: '3', team2: '우루과이', rank2: '11', venue: '리바이스 스타디움', city: 'San Francisco', color: 'indigo' },
+            { date: '2026-06-22 18:00', type: 'GROUP I', team1: '독일', rank1: '15', team2: '카메룬', rank2: '49', venue: '질레트 스타디움', city: 'Boston', color: 'indigo' },
+            { date: '2026-06-24 21:00', type: 'GROUP A', team1: '대한민국', rank1: '25', team2: '남아공', rank2: '58', venue: '몬테레이 스타디움', city: 'Monterrey', color: 'red' },
+            { date: '2026-06-27 19:00', type: 'GROUP L', team1: '포르투갈', rank1: '5', team2: '콜롬비아', rank2: '12', venue: '하드록 스타디움', city: 'Miami', color: 'pink' },
+            { date: '2026-06-28 15:00', type: 'ROUND OF 32', team1: 'A조 2위', rank1: '-', team2: 'B조 2위', rank1: '-', venue: 'SoFi 스타디움', city: 'Los Angeles', color: 'orange' },
+            { date: '2026-07-04 18:00', type: 'ROUND OF 16', team1: '37경기 승자', rank1: '-', team2: '38경기 승자', rank1: '-', venue: '메트라이프 스타디움', city: 'East Rutherford', color: 'orange' },
+            { date: '2026-07-09 20:00', type: 'QUARTER-FINAL', team1: '89경기 승자', rank1: '-', team2: '90경기 승자', rank1: '-', venue: '질레트 스타디움', city: 'Boston', color: 'orange' },
+            { date: '2026-07-14 19:00', type: 'SEMI-FINAL', team1: '97경기 승자', rank1: '-', team2: '98경기 승자', rank1: '-', venue: 'AT&T 스타디움', city: 'Arlington', color: 'orange' },
+            { date: '2026-07-19 18:00', type: 'FINAL', team1: '101경기 승자', rank1: '-', team2: '102경기 승자', rank1: '-', venue: '메트라이프 스타디움', city: 'East Rutherford', color: 'orange' }
+        ];
+
+        function renderMatches() {
+            const list = document.getElementById('full-match-list');
+            list.innerHTML = '';
+            
+            matches.sort((a, b) => new Date(a.date) - new Date(b.date)).forEach(m => {
+                const dateObj = new Date(m.date);
+                const dateStr = `${dateObj.getMonth() + 1}월 ${dateObj.getDate()}일 (${['일','월','화','수','목','금','토'][dateObj.getDay()]}) ${String(dateObj.getHours()).padStart(2, '0')}:00`;
+                
+                const html = `
+                    <div class="bg-gray-800/50 p-4 rounded-lg flex flex-col md:flex-row md:items-center justify-between border-l-4 border-${m.color}-500">
+                        <div class="mb-2 md:mb-0">
+                            <span class="text-xs font-bold bg-${m.color}-500 px-2 py-0.5 rounded text-white mr-2">${m.type}</span>
+                            <span class="text-sm text-gray-400">${dateStr}</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-6 my-4 md:my-0">
+                            <div class="text-right w-24 md:w-32"><span class="block text-lg font-bold">${m.team1} ${m.rank1 !== '-' ? `<span class="text-sm font-bold text-wc-gold">FIFA Rank #${m.rank1}</span>` : ''}</span></div>
+                            <div class="text-2xl font-black text-wc-gold">VS</div>
+                            <div class="text-left w-24 md:w-32"><span class="block text-lg font-bold">${m.team2} ${m.rank2 !== '-' && m.rank2 !== undefined ? `<span class="text-sm font-bold text-wc-gold">FIFA Rank #${m.rank2}</span>` : ''}</span></div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-sm text-gray-300 block">${m.venue}</span>
+                            <span class="text-xs text-gray-500 italic">${m.city}</span>
+                        </div>
+                    </div>
+                `;
+                list.innerHTML += html;
+            });
+        }
+
+        // Initial render
+        renderMatches();
+
         // Tab switching logic
         function switchTab(tab) {
             const tabs = ['matches', 'korea', 'cities'];
