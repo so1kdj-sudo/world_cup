@@ -56,9 +56,9 @@
         <section class="mb-16">
             <h2 class="text-2xl font-bold mb-8 border-l-4 border-wc-gold pl-4">대회 타임라인 <span class="text-gray-500 font-normal text-lg">Timeline</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                <div onclick="toggleGroupFilter()" class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-wc-gold transition-all cursor-pointer group">
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-wc-gold transition-all">
                     <div class="text-wc-gold text-sm font-bold mb-2">6월 11일 - 27일</div>
-                    <div class="text-lg font-bold group-hover:text-wc-gold transition-colors">조별 예선 (필터)</div>
+                    <div class="text-lg font-bold">조별 예선</div>
                     <div class="text-xs text-gray-400 mt-2">104경기 대장정 시작</div>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
@@ -80,27 +80,6 @@
                     <div class="text-black/60 text-sm font-bold mb-2">7월 19일</div>
                     <div class="text-lg font-extrabold">최종 결승전</div>
                     <div class="text-xs text-black/60 mt-2">뉴욕/뉴저지 메트라이프</div>
-                </div>
-            </div>
-            <!-- Group Filter Selector (Hidden by default) -->
-            <div id="group-filter-container" class="hidden mt-8 p-6 bg-gray-800/30 rounded-2xl border border-gray-700">
-                <h3 class="text-sm font-bold text-wc-gold mb-4 uppercase tracking-wider text-center">조별 일정 필터 (Select Group)</h3>
-                <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
-                    <button onclick="filterByGroup('A')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group A</button>
-                    <button onclick="filterByGroup('B')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group B</button>
-                    <button onclick="filterByGroup('C')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group C</button>
-                    <button onclick="filterByGroup('D')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group D</button>
-                    <button onclick="filterByGroup('E')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group E</button>
-                    <button onclick="filterByGroup('F')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group F</button>
-                    <button onclick="filterByGroup('G')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group G</button>
-                    <button onclick="filterByGroup('H')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group H</button>
-                    <button onclick="filterByGroup('I')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group I</button>
-                    <button onclick="filterByGroup('J')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group J</button>
-                    <button onclick="filterByGroup('K')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group K</button>
-                    <button onclick="filterByGroup('L')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group L</button>
-                </div>
-                <div class="text-center mt-4">
-                    <button onclick="resetGroupFilter()" class="text-xs text-gray-500 hover:text-wc-gold underline">전체 보기 (Reset Filter)</button>
                 </div>
             </div>
         </section>
@@ -261,27 +240,6 @@
                 </div>
                 <p class="text-center text-gray-500 text-sm mt-8">외 필라델피아, 샌프란시스코, 시애틀 등 총 16개 도시</p>
             </div>
-            <!-- Group Filter Selector (Hidden by default) -->
-            <div id="group-filter-container" class="hidden mt-8 p-6 bg-gray-800/30 rounded-2xl border border-gray-700">
-                <h3 class="text-sm font-bold text-wc-gold mb-4 uppercase tracking-wider text-center">조별 일정 필터 (Select Group)</h3>
-                <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
-                    <button onclick="filterByGroup('A')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group A</button>
-                    <button onclick="filterByGroup('B')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group B</button>
-                    <button onclick="filterByGroup('C')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group C</button>
-                    <button onclick="filterByGroup('D')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group D</button>
-                    <button onclick="filterByGroup('E')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group E</button>
-                    <button onclick="filterByGroup('F')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group F</button>
-                    <button onclick="filterByGroup('G')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group G</button>
-                    <button onclick="filterByGroup('H')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group H</button>
-                    <button onclick="filterByGroup('I')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group I</button>
-                    <button onclick="filterByGroup('J')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group J</button>
-                    <button onclick="filterByGroup('K')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group K</button>
-                    <button onclick="filterByGroup('L')" class="group-btn py-2 rounded bg-gray-700 hover:bg-wc-gold hover:text-black font-bold transition-all text-xs">Group L</button>
-                </div>
-                <div class="text-center mt-4">
-                    <button onclick="resetGroupFilter()" class="text-xs text-gray-500 hover:text-wc-gold underline">전체 보기 (Reset Filter)</button>
-                </div>
-            </div>
         </section>
     </main>
 
@@ -327,47 +285,11 @@
             { date: '2026-07-19 18:00', type: 'FINAL', team1: '101경기 승자', rank1: '-', team2: '102경기 승자', rank1: '-', venue: '메트라이프 스타디움', city: 'East Rutherford', color: 'orange' }
         ];
 
-        function toggleGroupFilter() {
-            const container = document.getElementById('group-filter-container');
-            container.classList.toggle('hidden');
-            if (!container.classList.contains('hidden')) {
-                switchTab('matches');
-                container.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        function filterByGroup(groupCode) {
-            renderMatches(groupCode);
-            // Highlight active button
-            document.querySelectorAll('.group-btn').forEach(btn => {
-                if (btn.innerText.includes(groupCode)) {
-                    btn.classList.replace('bg-gray-700', 'bg-wc-gold');
-                    btn.classList.add('text-black');
-                } else {
-                    btn.classList.replace('bg-wc-gold', 'bg-gray-700');
-                    btn.classList.remove('text-black');
-                }
-            });
-        }
-
-        function resetGroupFilter() {
-            renderMatches();
-            document.querySelectorAll('.group-btn').forEach(btn => {
-                btn.classList.replace('bg-wc-gold', 'bg-gray-700');
-                btn.classList.remove('text-black');
-            });
-        }
-
-        function renderMatches(filterGroup = null) {
+        function renderMatches() {
             const list = document.getElementById('full-match-list');
             list.innerHTML = '';
             
-            let filteredMatches = matches;
-            if (filterGroup) {
-                filteredMatches = matches.filter(m => m.type.includes(`GROUP ${filterGroup}`) || (m.type === 'OPENING' && filterGroup === 'A'));
-            }
-
-            filteredMatches.sort((a, b) => new Date(a.date) - new Date(b.date)).forEach(m => {
+            matches.sort((a, b) => new Date(a.date) - new Date(b.date)).forEach(m => {
                 const dateObj = new Date(m.date);
                 const dateStr = `${dateObj.getMonth() + 1}월 ${dateObj.getDate()}일 (${['일','월','화','수','목','금','토'][dateObj.getDay()]}) ${String(dateObj.getHours()).padStart(2, '0')}:00`;
                 
