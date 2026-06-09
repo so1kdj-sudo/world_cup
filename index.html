@@ -87,9 +87,9 @@
         <!-- Match Schedule, Host Cities & Team Korea Tabs -->
         <section>
             <div class="flex flex-wrap gap-2 md:gap-4 mb-8">
-                <button onclick="switchTab('korea')" id="btn-korea" class="px-6 py-2 rounded-lg font-bold bg-red-600 text-white border-2 border-white animate-pulse">🇰🇷 대한민국 (가장 중요)</button>
+                <button onclick="switchTab('korea')" id="btn-korea" class="px-6 py-2 rounded-lg font-bold bg-wc-gold text-black border border-wc-gold/50">🇰🇷 대한민국 일정</button>
                 <button onclick="switchTab('matches')" id="btn-matches" class="px-6 py-2 rounded-lg font-bold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">전체 일정</button>
-                <button onclick="switchTab('bracket')" id="id-btn-bracket" class="px-6 py-2 rounded-lg font-bold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">48강 대진표</button>
+                <button onclick="switchTab('cities')" id="btn-cities" class="px-6 py-2 rounded-lg font-bold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all">개최 도시</button>
             </div>
 
             <!-- Match Schedule Content -->
@@ -178,45 +178,67 @@
                 </div>
             </div>
 
-            <!-- Tournament Bracket Content -->
-            <div id="tab-bracket" class="hidden overflow-x-auto pb-8">
-                <div class="min-w-[1000px]">
-                    <h3 class="text-xl font-bold mb-6 text-wc-gold border-b border-gray-800 pb-2">2026 월드컵 48강 토너먼트 로드맵</h3>
-                    <div class="flex justify-between items-start space-x-4">
-                        <!-- Round of 32 -->
-                        <div class="flex-1 space-y-4">
-                            <div class="text-xs font-bold text-gray-500 uppercase text-center mb-4">Round of 32 (32강)</div>
-                            <div class="bg-gray-800 p-2 rounded border border-gray-700 text-xs">A조 1위 vs C/D/E 3위</div>
-                            <div class="bg-red-900/50 p-2 rounded border-2 border-red-500 text-xs font-bold">A조 2위 (대한민국 예정) vs B조 2위</div>
-                            <div class="bg-gray-800 p-2 rounded border border-gray-700 text-xs opacity-50">... 총 16경기 ...</div>
+            <!-- Host Cities Content -->
+            <div id="tab-cities" class="hidden">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇺🇸</span>
                         </div>
-                        <!-- Round of 16 -->
-                        <div class="flex-1 space-y-4 pt-12">
-                            <div class="text-xs font-bold text-gray-500 uppercase text-center mb-4">Round of 16 (16강)</div>
-                            <div class="bg-gray-800 p-2 h-16 flex items-center justify-center rounded border border-gray-700 text-xs italic text-gray-400">Match 81 Winner</div>
-                            <div class="bg-gray-800 p-2 h-16 flex items-center justify-center rounded border border-gray-700 text-xs italic text-gray-400">Match 82 Winner</div>
-                        </div>
-                        <!-- Quarter Finals -->
-                        <div class="flex-1 space-y-4 pt-24">
-                            <div class="text-xs font-bold text-gray-500 uppercase text-center mb-4">Quarter Finals (8강)</div>
-                            <div class="bg-gray-800 p-4 h-24 flex items-center justify-center rounded border border-wc-gold/30 text-xs italic text-wc-gold">Match 97 Winner</div>
-                        </div>
-                        <!-- Semi Finals -->
-                        <div class="flex-1 space-y-4 pt-36">
-                            <div class="text-xs font-bold text-gray-500 uppercase text-center mb-4">Semi Finals (4강)</div>
-                            <div class="bg-wc-gold/10 p-4 h-32 flex items-center justify-center rounded border-2 border-wc-gold text-xs font-bold text-wc-gold">Finalist A</div>
-                        </div>
-                        <!-- Final -->
-                        <div class="flex-1 space-y-4 pt-48">
-                            <div class="text-xs font-bold text-wc-gold uppercase text-center mb-4">FINAL (결승)</div>
-                            <div class="bg-wc-gold p-6 h-40 flex flex-col items-center justify-center rounded-xl border-4 border-white text-black">
-                                <span class="text-2xl mb-2">🏆</span>
-                                <span class="font-black text-lg">WORLD CHAMPION</span>
-                            </div>
-                        </div>
+                        <div class="font-bold">뉴욕/뉴저지</div>
+                        <div class="text-xs text-gray-500 italic">New York/New Jersey</div>
                     </div>
-                    <p class="mt-8 text-sm text-gray-500">※ 48강 체제에서는 12개 조의 1, 2위와 성적이 좋은 3위 8개 팀이 32강에 진출합니다.</p>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇺🇸</span>
+                        </div>
+                        <div class="font-bold">로스앤젤레스</div>
+                        <div class="text-xs text-gray-500 italic">Los Angeles</div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇲🇽</span>
+                        </div>
+                        <div class="font-bold">멕시코시티</div>
+                        <div class="text-xs text-gray-500 italic">Mexico City</div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇨🇦</span>
+                        </div>
+                        <div class="font-bold">밴쿠버</div>
+                        <div class="text-xs text-gray-500 italic">Vancouver</div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇺🇸</span>
+                        </div>
+                        <div class="font-bold">마이애미</div>
+                        <div class="text-xs text-gray-500 italic">Miami</div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇺🇸</span>
+                        </div>
+                        <div class="font-bold">댈러스</div>
+                        <div class="text-xs text-gray-500 italic">Dallas</div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇲🇽</span>
+                        </div>
+                        <div class="font-bold">과달라하라</div>
+                        <div class="text-xs text-gray-500 italic">Guadalajara</div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-xl text-center group cursor-default">
+                        <div class="w-12 h-12 bg-wc-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-wc-gold/20 transition-all">
+                            <span class="text-xl">🇨🇦</span>
+                        </div>
+                        <div class="font-bold">토론토</div>
+                        <div class="text-xs text-gray-500 italic">Toronto</div>
+                    </div>
                 </div>
+                <p class="text-center text-gray-500 text-sm mt-8">외 필라델피아, 샌프란시스코, 시애틀 등 총 16개 도시</p>
             </div>
         </section>
     </main>
@@ -294,33 +316,26 @@
 
         // Initial render
         renderMatches();
-<script>
-    // Tab switching logic
-    function switchTab(tab) {
-        const tabs = ['matches', 'korea', 'bracket'];
 
-        tabs.forEach(t => {
-            const content = document.getElementById(`tab-${t}`);
-            const btn = t === 'bracket' ? document.getElementById('id-btn-bracket') : document.getElementById(`btn-${t}`);
-
-            if (t === tab) {
-                content.classList.remove('hidden');
-                if (t === 'korea') {
-                    btn.className = 'px-6 py-2 rounded-lg font-bold bg-red-600 text-white border-2 border-white animate-pulse';
-                } else {
+        // Tab switching logic
+        function switchTab(tab) {
+            const tabs = ['matches', 'korea', 'cities'];
+            
+            tabs.forEach(t => {
+                const content = document.getElementById(`tab-${t}`);
+                const btn = document.getElementById(`btn-${t}`);
+                
+                if (t === tab) {
+                    content.classList.remove('hidden');
                     btn.className = 'px-6 py-2 rounded-lg font-bold bg-wc-gold text-black';
-                }
-            } else {
-                content.classList.add('hidden');
-                if (t === 'korea') {
-                    btn.className = 'px-6 py-2 rounded-lg font-bold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all border border-red-500/30';
+                    if (t === 'korea') btn.classList.add('border', 'border-wc-gold/50');
                 } else {
+                    content.classList.add('hidden');
                     btn.className = 'px-6 py-2 rounded-lg font-bold bg-gray-800 text-gray-300 hover:bg-gray-700 transition-all';
+                    if (t === 'korea') btn.classList.add('border', 'border-wc-gold/50');
                 }
-            }
-        });
-    }
-
+            });
+        }
 
         // Countdown Timer Logic
         const targetDate = new Date('June 11, 2026 18:00:00').getTime();
